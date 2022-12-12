@@ -1,0 +1,19 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+h2,h3 {
+    color: red;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+h2 a {
+    color:rgb(16, 208, 180) ;
+    
+}
+h3 a {
+    color:rgb(174, 5, 246);
+
+}

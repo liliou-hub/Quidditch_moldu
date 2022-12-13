@@ -1,11 +1,16 @@
-h1{
-    color: red;
+h1 {
+    color: #871304;
 }
+
 .btn-warning {
     display:block;
     margin:auto;
+    background-color: #E3AE43 !important;
 }
 
 h1{
     text-align: center;
+}
+a {
+    color: #871304;
 }

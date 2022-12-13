@@ -2,17 +2,29 @@ body, html {
   height: 100%;
 }
 
+.container{
+  position: relative;
+}
+
 
 .center {
-  background: url("../img/poudlar.jpg") ;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+  position: relative;
+  z-index: 1;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;  
 }
 
 button { 
-    display:flex; 
-    justify-content: center;
- }
+  position: absolute;
+  z-index: 3; 
+  background-color: #E3AE43 !important;
+  width: 80%;
+  left: 70px;
+  top: 3em;
+}
+
+a{
+  color: #871304;
+}
+

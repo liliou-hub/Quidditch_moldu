@@ -15,13 +15,13 @@
 <body>
   {% if list_ligue %}
     {% for ligue in list_ligue %}
-  <div>
-      <button type="submit" class="btn-warning ">
+  <div class='container'>
+    <div class="center" >
+      <img src="/static/ligues/img/poudlar.jpg" alt="poudlard" >
+    </div>
+      <button type="submit" class="btn-warning button">
         <h1><a href="/ligues/{{ligue.id}}">{{ ligue.nom_ligue }}</a></h1>
       </button> 
-      <div class="center" >
-        <img src="/static/ligues/img/poudlar.jpg" alt="poudlard" >
-        </div>
     </div>    
     {% endfor %}
   {% endif %}     

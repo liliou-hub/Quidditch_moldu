@@ -50,6 +50,8 @@ class Match(models.Model):
     but_vis=models.IntegerField(default=0)
     nom_match= models.CharField(max_length=100, default='nom_match')
     date_match = models.DateField('Date du match',null=True)
+    img_loc=models.CharField(max_length=100, default='img_loc')
+    img_vis=models.CharField(max_length=100, default='img_vis')
     
     def __str__(self):
         return self.nom_match

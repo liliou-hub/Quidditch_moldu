@@ -16,25 +16,25 @@
         width: 100%;
         border-collapse: collapse;
       }
-    
+      
       table, th, td {
         border: 1px solid black;
       }
       thead {
-        background-color: red;
+        background-color: #871304;
         color: #ffffff;
       }
       th {
         text-align: center;
         height: 50px;
       }
-        tbody tr:nth-child(odd) {
+      tbody tr:nth-child(odd) {
         background: #ffffff;
         text-align: center
       }     
     </style>
   </head>
-
+  
   <body>
     <h1>Les matchs de {{ equipe.nom_equipe }}</h1>
     <table>
@@ -44,27 +44,28 @@
           <th>Matchs</th>
         </tr>
       </thead>        
-          
+      
       {% for matchs in list_match %}
-        <tbody>
-          <tr>
-              <td>
-                {{matchs.date_match|date:" D d M Y"}}
-              </td>
-              <td>
-                <b>{{matchs.but_loc}} buts</b> {{matchs}} <b>{{matchs.but_vis}} buts</b>
-              </td>
+      <tbody>
+        <tr>
+          <td>
+            {{matchs.date_match|date:" D d M Y"}}
+          </td>
+          <td>
+            <img src="/static/ligues/img/{{matchs.img_loc}}"> <b>{{matchs.but_loc}} buts</b>  {{matchs}} <b>{{matchs.but_vis}} buts</b><img src="/static/ligues/img/{{matchs.img_vis}}"> 
+          </td>
           </tr>        
         </tbody> 
-            
+        
         {% endfor %}          
-    </table>
-    <h2><a href="/ligues/{{equipe.ligue.id}}/results/classement">Voir le classement de la ligue</h2> 
-    <h3><a href="/ligues/{{equipe.ligue.id}}">Retour aux équipes</a></h3>          
-  </body>
-</html>
-
-
-
-
-
+      </table>
+      <h2><a href="/ligues/{{equipe.ligue.id}}/results/classement">Voir le classement de la ligue</h2> 
+      <h3><a href="/ligues/{{equipe.ligue.id}}">Retour aux équipes</a></h3>          
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
